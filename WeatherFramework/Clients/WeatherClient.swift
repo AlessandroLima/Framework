@@ -7,15 +7,15 @@
 
 import Foundation
 
-struct WeatherClient {
+public struct WeatherClient {
     
     let session: URLSessionProtocol
     
-    init(session: URLSessionProtocol = URLSessionWrapper()) {
+    public init(session: URLSessionProtocol = URLSessionWrapper()) {
         self.session = session
     }
     
-    func fetchWeather(location: Location) async throws -> Weather {
+    public func fetchWeather(location: Location) async throws -> Weather {
         let url = APIEndPoint.endPointURL(for: .weatherByLatLong(location.lat ?? 0.0, location.lon ?? 0.0))
         let (data, response) = try await session.data(from: url)
         

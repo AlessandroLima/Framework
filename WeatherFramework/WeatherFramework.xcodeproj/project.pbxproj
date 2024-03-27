@@ -17,6 +17,14 @@
 		D250AE332BB2F1F700D56801 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE312BB2F1F700D56801 /* Location.swift */; };
 		D250AE362BB2F20A00D56801 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE342BB2F20A00D56801 /* GeocodingClient.swift */; };
 		D250AE372BB2F20A00D56801 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE352BB2F20A00D56801 /* WeatherClient.swift */; };
+		D250AE552BB2F6A600D56801 /* MeasurementFormarter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE542BB2F6A600D56801 /* MeasurementFormarter+Extension.swift */; };
+		D250AE562BB2F6A600D56801 /* MeasurementFormarter+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE542BB2F6A600D56801 /* MeasurementFormarter+Extension.swift */; };
+		D250AE5B2BB305B800D56801 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE2C2BB2F1D700D56801 /* APIEndPoint.swift */; };
+		D250AE5C2BB305BC00D56801 /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE2D2BB2F1D700D56801 /* Environment .swift */; };
+		D250AE5D2BB305C300D56801 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE312BB2F1F700D56801 /* Location.swift */; };
+		D250AE5E2BB305C600D56801 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE302BB2F1F700D56801 /* Weather.swift */; };
+		D250AE5F2BB305CB00D56801 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE342BB2F20A00D56801 /* GeocodingClient.swift */; };
+		D250AE602BB305CF00D56801 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE352BB2F20A00D56801 /* WeatherClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -41,6 +49,7 @@
 		D250AE312BB2F1F700D56801 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D250AE342BB2F20A00D56801 /* GeocodingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 		D250AE352BB2F20A00D56801 /* WeatherClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
+		D250AE542BB2F6A600D56801 /* MeasurementFormarter+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "MeasurementFormarter+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +74,7 @@
 		D250ADF22BADC7E500D56801 = {
 			isa = PBXGroup;
 			children = (
+				D250AE572BB2F6BC00D56801 /* Utils */,
 				D250AE3A2BB2F24100D56801 /* Environment  */,
 				D250AE392BB2F22800D56801 /* Models */,
 				D250AE382BB2F21700D56801 /* Clients */,
@@ -125,6 +135,14 @@
 				D250AE2D2BB2F1D700D56801 /* Environment .swift */,
 			);
 			path = "Environment ";
+			sourceTree = "<group>";
+		};
+		D250AE572BB2F6BC00D56801 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				D250AE542BB2F6A600D56801 /* MeasurementFormarter+Extension.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -243,6 +261,7 @@
 				D250AE332BB2F1F700D56801 /* Location.swift in Sources */,
 				D250AE012BADC7E500D56801 /* WeatherFramework.docc in Sources */,
 				D250AE2E2BB2F1D700D56801 /* APIEndPoint.swift in Sources */,
+				D250AE552BB2F6A600D56801 /* MeasurementFormarter+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -251,6 +270,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				D250AE0C2BADC7E600D56801 /* WeatherFrameworkTests.swift in Sources */,
+				D250AE562BB2F6A600D56801 /* MeasurementFormarter+Extension.swift in Sources */,
+				D250AE5F2BB305CB00D56801 /* GeocodingClient.swift in Sources */,
+				D250AE5D2BB305C300D56801 /* Location.swift in Sources */,
+				D250AE5C2BB305BC00D56801 /* Environment .swift in Sources */,
+				D250AE602BB305CF00D56801 /* WeatherClient.swift in Sources */,
+				D250AE5E2BB305C600D56801 /* Weather.swift in Sources */,
+				D250AE5B2BB305B800D56801 /* APIEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

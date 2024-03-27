@@ -16,11 +16,11 @@ struct WeatherResponse: Codable, Equatable {
 }
 
 
-struct Weather: Codable, Equatable {
-    var temp:       Double
+public struct Weather: Codable, Equatable {
     
+    public var temp:       Double
     
-    static func ==(lhs: Weather, rhs: Weather) -> Bool {
+    public static func ==(lhs: Weather, rhs: Weather) -> Bool {
         return lhs.temp == rhs.temp
     }
 }

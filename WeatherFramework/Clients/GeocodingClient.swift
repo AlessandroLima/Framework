@@ -12,24 +12,25 @@ enum NetworkError: Error {
     case invalidResponse
 }
 
-protocol URLSessionProtocol {
+public protocol URLSessionProtocol {
     func data(from url: URL) async throws -> (Data, URLResponse)
 }
 
-struct URLSessionWrapper: URLSessionProtocol {
-    func data(from url: URL) async throws -> (Data, URLResponse) {
+public struct URLSessionWrapper: URLSessionProtocol {
+    public init() {}
+    public func data(from url: URL) async throws -> (Data, URLResponse) {
         return try await URLSession.shared.data(from: url)
     }
 }
 
-struct GeocodingClient {
+public struct GeocodingClient {
     let session: URLSessionProtocol
     
-    init(session: URLSessionProtocol = URLSessionWrapper()) {
+    public init(session: URLSessionProtocol = URLSessionWrapper()) {
         self.session = session
     }
     
-    func coordinateByCity(_ city: String) async throws -> Location? {
+    public func coordinateByCity(_ city: String) async throws -> Location? {
         let (data, response) = try await session.data(from: APIEndPoint.endPointURL(for: .coordinatesByLocationName(city)))
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {

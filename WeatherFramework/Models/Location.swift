@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Location: Codable, Equatable {
+public struct Location: Codable, Equatable {
     var name:    String?
     var lat:     Double?
     var lon:     Double?
@@ -15,7 +15,7 @@ struct Location: Codable, Equatable {
     var state:   String?
     
     
-    static func == (lhs: Location, rhs: Location) -> Bool {
+    public static func == (lhs: Location, rhs: Location) -> Bool {
         return lhs.name == rhs.name
         && lhs.lat == rhs.lat
         && lhs.lon == rhs.lon
