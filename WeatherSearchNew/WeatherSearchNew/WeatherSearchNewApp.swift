@@ -6,7 +6,7 @@
 //
 
 import SwiftUI
-import WeatherFramework
+import Weather
 
 @main
 struct WeatherSearchNewApp: App {
