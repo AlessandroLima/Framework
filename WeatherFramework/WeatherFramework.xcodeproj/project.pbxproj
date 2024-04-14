@@ -13,7 +13,7 @@
 		D250AE0D2BADC7E600D56801 /* WeatherFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D250ADFF2BADC7E500D56801 /* WeatherFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D250AE2E2BB2F1D700D56801 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE2C2BB2F1D700D56801 /* APIEndPoint.swift */; };
 		D250AE2F2BB2F1D700D56801 /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE2D2BB2F1D700D56801 /* Environment .swift */; };
-		D250AE322BB2F1F700D56801 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE302BB2F1F700D56801 /* Weather.swift */; };
+		D250AE322BB2F1F700D56801 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE302BB2F1F700D56801 /* Temp.swift */; };
 		D250AE332BB2F1F700D56801 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE312BB2F1F700D56801 /* Location.swift */; };
 		D250AE362BB2F20A00D56801 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE342BB2F20A00D56801 /* GeocodingClient.swift */; };
 		D250AE372BB2F20A00D56801 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE352BB2F20A00D56801 /* WeatherClient.swift */; };
@@ -22,7 +22,7 @@
 		D250AE5B2BB305B800D56801 /* APIEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE2C2BB2F1D700D56801 /* APIEndPoint.swift */; };
 		D250AE5C2BB305BC00D56801 /* Environment .swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE2D2BB2F1D700D56801 /* Environment .swift */; };
 		D250AE5D2BB305C300D56801 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE312BB2F1F700D56801 /* Location.swift */; };
-		D250AE5E2BB305C600D56801 /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE302BB2F1F700D56801 /* Weather.swift */; };
+		D250AE5E2BB305C600D56801 /* Temp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE302BB2F1F700D56801 /* Temp.swift */; };
 		D250AE5F2BB305CB00D56801 /* GeocodingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE342BB2F20A00D56801 /* GeocodingClient.swift */; };
 		D250AE602BB305CF00D56801 /* WeatherClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE352BB2F20A00D56801 /* WeatherClient.swift */; };
 /* End PBXBuildFile section */
@@ -45,7 +45,7 @@
 		D250AE0B2BADC7E600D56801 /* WeatherFrameworkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherFrameworkTests.swift; sourceTree = "<group>"; };
 		D250AE2C2BB2F1D700D56801 /* APIEndPoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIEndPoint.swift; sourceTree = "<group>"; };
 		D250AE2D2BB2F1D700D56801 /* Environment .swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Environment .swift"; sourceTree = "<group>"; };
-		D250AE302BB2F1F700D56801 /* Weather.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
+		D250AE302BB2F1F700D56801 /* Temp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Temp.swift; sourceTree = "<group>"; };
 		D250AE312BB2F1F700D56801 /* Location.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		D250AE342BB2F20A00D56801 /* GeocodingClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GeocodingClient.swift; sourceTree = "<group>"; };
 		D250AE352BB2F20A00D56801 /* WeatherClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WeatherClient.swift; sourceTree = "<group>"; };
@@ -123,7 +123,7 @@
 			isa = PBXGroup;
 			children = (
 				D250AE312BB2F1F700D56801 /* Location.swift */,
-				D250AE302BB2F1F700D56801 /* Weather.swift */,
+				D250AE302BB2F1F700D56801 /* Temp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -254,7 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D250AE322BB2F1F700D56801 /* Weather.swift in Sources */,
+				D250AE322BB2F1F700D56801 /* Temp.swift in Sources */,
 				D250AE2F2BB2F1D700D56801 /* Environment .swift in Sources */,
 				D250AE372BB2F20A00D56801 /* WeatherClient.swift in Sources */,
 				D250AE362BB2F20A00D56801 /* GeocodingClient.swift in Sources */,
@@ -275,7 +275,7 @@
 				D250AE5D2BB305C300D56801 /* Location.swift in Sources */,
 				D250AE5C2BB305BC00D56801 /* Environment .swift in Sources */,
 				D250AE602BB305CF00D56801 /* WeatherClient.swift in Sources */,
-				D250AE5E2BB305C600D56801 /* Weather.swift in Sources */,
+				D250AE5E2BB305C600D56801 /* Temp.swift in Sources */,
 				D250AE5B2BB305B800D56801 /* APIEndPoint.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

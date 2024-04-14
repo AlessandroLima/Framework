@@ -12,7 +12,7 @@ struct ContentView: View {
     
     @State private var city: String = ""
     @State private var isFetchingWeather: Bool = false
-    @State private var weather: Weather?
+    @State private var weather: Temp?
     
     let geocodingClient = GeocodingClient()
     let weatherClient = WeatherClient()

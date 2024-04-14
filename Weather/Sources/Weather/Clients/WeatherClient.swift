@@ -15,7 +15,7 @@ public struct WeatherClient {
         self.session = session
     }
     
-    public func fetchWeather(location: Location) async throws -> Weather {
+    public func fetchWeather(location: Location) async throws -> Temp {
         let url = APIEndPoint.endPointURL(for: .weatherByLatLong(location.lat ?? 0.0, location.lon ?? 0.0))
         let (data, response) = try await session.data(from: url)
         

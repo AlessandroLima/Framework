@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "weather",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/AlessandroLima/Weather",
+      "state" : {
+        "branch" : "develop",
+        "revision" : "b58aaf2e7745b960013bd88bfef2f88e7c9858ff"
+      }
+    }
+  ],
+  "version" : 2
+}
