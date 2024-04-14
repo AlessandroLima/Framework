@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		D214D7382B7F966200CCFD9D /* WeatherClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7372B7F966200CCFD9D /* WeatherClientTests.swift */; };
 		D214D73A2B7F96A400CCFD9D /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7392B7F96A400CCFD9D /* MockURLSession.swift */; };
-		D2597C092BCBDFB10016DE09 /* Weather in Frameworks */ = {isa = PBXBuildFile; productRef = D2597C082BCBDFB10016DE09 /* Weather */; };
+		D2597C502BCC27190016DE09 /* Weather in Frameworks */ = {isa = PBXBuildFile; productRef = D2597C4F2BCC27190016DE09 /* Weather */; };
 		D25E3F972B7D7A4C0082B3DC /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E3F962B7D7A4C0082B3DC /* WeatherTests.swift */; };
 		D25E3F992B7D7AD60082B3DC /* GeocodingClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E3F982B7D7AD60082B3DC /* GeocodingClientTests.swift */; };
 		D26992ED2B7D70FB004F3FFC /* APIEndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992EC2B7D70FB004F3FFC /* APIEndPointTests.swift */; };
@@ -78,7 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2597C092BCBDFB10016DE09 /* Weather in Frameworks */,
+				D2597C502BCC27190016DE09 /* Weather in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -188,7 +188,7 @@
 			);
 			name = WeatherSearchNew;
 			packageProductDependencies = (
-				D2597C082BCBDFB10016DE09 /* Weather */,
+				D2597C4F2BCC27190016DE09 /* Weather */,
 			);
 			productName = WeatherSearchNew;
 			productReference = D26A00422B7BAF8E00AAF9E4 /* WeatherSearchNew.app */;
@@ -263,7 +263,7 @@
 			);
 			mainGroup = D26A00392B7BAF8E00AAF9E4;
 			packageReferences = (
-				D2597C072BCBDFB10016DE09 /* XCRemoteSwiftPackageReference "Weather" */,
+				D2597C4E2BCC27190016DE09 /* XCRemoteSwiftPackageReference "Weather" */,
 			);
 			productRefGroup = D26A00432B7BAF8E00AAF9E4 /* Products */;
 			projectDirPath = "";
@@ -668,20 +668,20 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		D2597C072BCBDFB10016DE09 /* XCRemoteSwiftPackageReference "Weather" */ = {
+		D2597C4E2BCC27190016DE09 /* XCRemoteSwiftPackageReference "Weather" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/AlessandroLima/Weather";
+			repositoryURL = "https://github.com/AlessandroLima/Weather/";
 			requirement = {
-				branch = develop;
+				branch = main;
 				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		D2597C082BCBDFB10016DE09 /* Weather */ = {
+		D2597C4F2BCC27190016DE09 /* Weather */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = D2597C072BCBDFB10016DE09 /* XCRemoteSwiftPackageReference "Weather" */;
+			package = D2597C4E2BCC27190016DE09 /* XCRemoteSwiftPackageReference "Weather" */;
 			productName = Weather;
 		};
 /* End XCSwiftPackageProductDependency section */

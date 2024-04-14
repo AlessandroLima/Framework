@@ -3,10 +3,10 @@
     {
       "identity" : "weather",
       "kind" : "remoteSourceControl",
-      "location" : "https://github.com/AlessandroLima/Weather",
+      "location" : "https://github.com/AlessandroLima/Weather/",
       "state" : {
-        "branch" : "develop",
-        "revision" : "b58aaf2e7745b960013bd88bfef2f88e7c9858ff"
+        "branch" : "main",
+        "revision" : "d4f87829cd28f7bf9cbd69ce751aa05022303051"
       }
     }
   ],
