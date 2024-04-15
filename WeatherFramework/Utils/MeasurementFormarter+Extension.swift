@@ -7,6 +7,7 @@
 
 import Foundation
 
+
 public final class MeasurementFormarter {
     
     public static func temperature(value: Double) -> String {

@@ -6,22 +6,30 @@
 //
 
 import SwiftUI
-import Weather
+import WeatherFramework
 
 struct ContentView: View {
     
     @State private var city: String = ""
     @State private var isFetchingWeather: Bool = false
-    @State private var weather: Temp?
+    @State private var temperature: Temp?
     
-    let geocodingClient = GeocodingClient()
-    let weatherClient = WeatherClient()
+    private var weather: Weather?
+    
+    init(weather: Weather) {
+        self.weather = weather
+        self.temperature = weather.getTemp()
+    }
     
     private func fetchWeather() async {
         
         do {
-            guard let location = try await geocodingClient.coordinateByCity(city) else { return }
-            weather = try await weatherClient.fetchWeather(location: location)
+            
+            if let weather = weather {
+                guard let location = try await weather.geocodingClient.coordinateByCity(city)  else { return }
+                temperature = try await weather.weatherClient.fetchWeather(location: location)
+            }
+            
         } catch {
             print(error)
             return
@@ -43,8 +51,8 @@ struct ContentView: View {
                     }
                 }
             Spacer()
-            if let weather {
-                Text(MeasurementFormarter.temperature(value: weather.temp))
+            if let temperature {
+                Text(MeasurementFormarter.temperature(value: temperature.temp))
                     .font(.system(size: 50))
             }
             Spacer()
@@ -57,7 +65,7 @@ struct ContentView: View {
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
-        ContentView()
+        ContentView(weather: Weather())
     }
 }
 

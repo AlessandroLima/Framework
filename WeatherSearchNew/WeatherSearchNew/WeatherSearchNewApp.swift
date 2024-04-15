@@ -6,14 +6,16 @@
 //
 
 import SwiftUI
-import Weather
+import WeatherFramework
 
 @main
 struct WeatherSearchNewApp: App {
     
+    let weather = Weather()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(weather: self.weather)
         }
     }
 }

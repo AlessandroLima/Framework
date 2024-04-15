@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D23DD0DF2BCD8FA70003A6AB /* Weather.swift in Sources */ = {isa = PBXBuildFile; fileRef = D23DD0DE2BCD8FA70003A6AB /* Weather.swift */; };
 		D250AE012BADC7E500D56801 /* WeatherFramework.docc in Sources */ = {isa = PBXBuildFile; fileRef = D250AE002BADC7E500D56801 /* WeatherFramework.docc */; };
 		D250AE072BADC7E600D56801 /* WeatherFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D250ADFC2BADC7E500D56801 /* WeatherFramework.framework */; };
 		D250AE0C2BADC7E600D56801 /* WeatherFrameworkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D250AE0B2BADC7E600D56801 /* WeatherFrameworkTests.swift */; };
@@ -38,6 +39,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D23DD0DE2BCD8FA70003A6AB /* Weather.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Weather.swift; sourceTree = "<group>"; };
 		D250ADFC2BADC7E500D56801 /* WeatherFramework.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = WeatherFramework.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D250ADFF2BADC7E500D56801 /* WeatherFramework.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherFramework.h; sourceTree = "<group>"; };
 		D250AE002BADC7E500D56801 /* WeatherFramework.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = WeatherFramework.docc; sourceTree = "<group>"; };
@@ -74,6 +76,7 @@
 		D250ADF22BADC7E500D56801 = {
 			isa = PBXGroup;
 			children = (
+				D23DD0DE2BCD8FA70003A6AB /* Weather.swift */,
 				D250AE572BB2F6BC00D56801 /* Utils */,
 				D250AE3A2BB2F24100D56801 /* Environment  */,
 				D250AE392BB2F22800D56801 /* Models */,
@@ -258,6 +261,7 @@
 				D250AE2F2BB2F1D700D56801 /* Environment .swift in Sources */,
 				D250AE372BB2F20A00D56801 /* WeatherClient.swift in Sources */,
 				D250AE362BB2F20A00D56801 /* GeocodingClient.swift in Sources */,
+				D23DD0DF2BCD8FA70003A6AB /* Weather.swift in Sources */,
 				D250AE332BB2F1F700D56801 /* Location.swift in Sources */,
 				D250AE012BADC7E500D56801 /* WeatherFramework.docc in Sources */,
 				D250AE2E2BB2F1D700D56801 /* APIEndPoint.swift in Sources */,

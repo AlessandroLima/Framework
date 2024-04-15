@@ -12,10 +12,12 @@ enum NetworkError: Error {
     case invalidResponse
 }
 
+@available(iOS 15.0.0, *)
 public protocol URLSessionProtocol {
     func data(from url: URL) async throws -> (Data, URLResponse)
 }
 
+@available(iOS 15.0.0, *)
 public struct URLSessionWrapper: URLSessionProtocol {
     public init() {}
     public func data(from url: URL) async throws -> (Data, URLResponse) {
@@ -23,7 +25,9 @@ public struct URLSessionWrapper: URLSessionProtocol {
     }
 }
 
+@available(iOS 15.0.0, *)
 public struct GeocodingClient {
+    
     let session: URLSessionProtocol
     
     public init(session: URLSessionProtocol = URLSessionWrapper()) {
