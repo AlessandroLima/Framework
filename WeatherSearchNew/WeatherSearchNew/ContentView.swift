@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WeatherFramework
 
 struct ContentView: View {
     

@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		D214D7382B7F966200CCFD9D /* WeatherClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7372B7F966200CCFD9D /* WeatherClientTests.swift */; };
 		D214D73A2B7F96A400CCFD9D /* MockURLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = D214D7392B7F96A400CCFD9D /* MockURLSession.swift */; };
+		D23DD0F32BCEB3520003A6AB /* Weather in Frameworks */ = {isa = PBXBuildFile; productRef = D23DD0F22BCEB3520003A6AB /* Weather */; };
+		D23DD1012BCEB5920003A6AB /* WeatherFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D23DD0FE2BCEB51A0003A6AB /* WeatherFramework.framework */; platformFilter = ios; };
+		D23DD1022BCEB5920003A6AB /* WeatherFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D23DD0FE2BCEB51A0003A6AB /* WeatherFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D25E3F972B7D7A4C0082B3DC /* WeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E3F962B7D7A4C0082B3DC /* WeatherTests.swift */; };
 		D25E3F992B7D7AD60082B3DC /* GeocodingClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D25E3F982B7D7AD60082B3DC /* GeocodingClientTests.swift */; };
 		D26992ED2B7D70FB004F3FFC /* APIEndPointTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D26992EC2B7D70FB004F3FFC /* APIEndPointTests.swift */; };
@@ -51,6 +54,20 @@
 			remoteGlobalIDString = D250AE062BADC7E600D56801;
 			remoteInfo = WeatherFrameworkTests;
 		};
+		D23DD0FD2BCEB51A0003A6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D23DD0F82BCEB5190003A6AB /* WeatherFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D250ADFC2BADC7E500D56801;
+			remoteInfo = WeatherFramework;
+		};
+		D23DD0FF2BCEB51A0003A6AB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D23DD0F82BCEB5190003A6AB /* WeatherFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D250AE062BADC7E600D56801;
+			remoteInfo = WeatherFrameworkTests;
+		};
 		D26A00542B7BAF9B00AAF9E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D26A003A2B7BAF8E00AAF9E4 /* Project object */;
@@ -74,6 +91,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				D23DD1022BCEB5920003A6AB /* WeatherFramework.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -85,6 +103,7 @@
 		D214D7392B7F96A400CCFD9D /* MockURLSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockURLSession.swift; sourceTree = "<group>"; };
 		D23DD0C12BCD8EC40003A6AB /* WeatherFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WeatherFramework.xcodeproj; path = ../WeatherFramework/WeatherFramework.xcodeproj; sourceTree = "<group>"; };
 		D23DD0CA2BCD8EC80003A6AB /* WeatherFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WeatherFramework.xcodeproj; path = ../WeatherFramework/WeatherFramework.xcodeproj; sourceTree = "<group>"; };
+		D23DD0F82BCEB5190003A6AB /* WeatherFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = WeatherFramework.xcodeproj; path = ../WeatherFramework/WeatherFramework.xcodeproj; sourceTree = "<group>"; };
 		D25E3F962B7D7A4C0082B3DC /* WeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherTests.swift; sourceTree = "<group>"; };
 		D25E3F982B7D7AD60082B3DC /* GeocodingClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeocodingClientTests.swift; sourceTree = "<group>"; };
 		D26992EC2B7D70FB004F3FFC /* APIEndPointTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIEndPointTests.swift; sourceTree = "<group>"; };
@@ -107,6 +126,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D23DD1012BCEB5920003A6AB /* WeatherFramework.framework in Frameworks */,
+				D23DD0F32BCEB3520003A6AB /* Weather in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -145,6 +166,15 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		D23DD0F92BCEB5190003A6AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D23DD0FE2BCEB51A0003A6AB /* WeatherFramework.framework */,
+				D23DD1002BCEB51A0003A6AB /* WeatherFrameworkTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D250AE502BB2F5E100D56801 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +187,7 @@
 		D26A00392B7BAF8E00AAF9E4 = {
 			isa = PBXGroup;
 			children = (
+				D23DD0F82BCEB5190003A6AB /* WeatherFramework.xcodeproj */,
 				D26A00442B7BAF8E00AAF9E4 /* WeatherSearchNew */,
 				D26A00562B7BAF9B00AAF9E4 /* WeatherSearchNewTests */,
 				D26A00602B7BAF9C00AAF9E4 /* WeatherSearchNewUITests */,
@@ -236,6 +267,7 @@
 			);
 			name = WeatherSearchNew;
 			packageProductDependencies = (
+				D23DD0F22BCEB3520003A6AB /* Weather */,
 			);
 			productName = WeatherSearchNew;
 			productReference = D26A00422B7BAF8E00AAF9E4 /* WeatherSearchNew.app */;
@@ -310,10 +342,15 @@
 			);
 			mainGroup = D26A00392B7BAF8E00AAF9E4;
 			packageReferences = (
+				D23DD0F12BCEB3520003A6AB /* XCRemoteSwiftPackageReference "Weather" */,
 			);
 			productRefGroup = D26A00432B7BAF8E00AAF9E4 /* Products */;
 			projectDirPath = "";
 			projectReferences = (
+				{
+					ProductGroup = D23DD0F92BCEB5190003A6AB /* Products */;
+					ProjectRef = D23DD0F82BCEB5190003A6AB /* WeatherFramework.xcodeproj */;
+				},
 				{
 					ProductGroup = D23DD0CB2BCD8EC80003A6AB /* Products */;
 					ProjectRef = D23DD0CA2BCD8EC80003A6AB /* WeatherFramework.xcodeproj */;
@@ -359,6 +396,20 @@
 			fileType = wrapper.cfbundle;
 			path = WeatherFrameworkTests.xctest;
 			remoteRef = D23DD0D12BCD8EC80003A6AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D23DD0FE2BCEB51A0003A6AB /* WeatherFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = WeatherFramework.framework;
+			remoteRef = D23DD0FD2BCEB51A0003A6AB /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D23DD1002BCEB51A0003A6AB /* WeatherFrameworkTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = WeatherFrameworkTests.xctest;
+			remoteRef = D23DD0FF2BCEB51A0003A6AB /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -753,6 +804,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D23DD0F12BCEB3520003A6AB /* XCRemoteSwiftPackageReference "Weather" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AlessandroLima/Weather/";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D23DD0F22BCEB3520003A6AB /* Weather */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D23DD0F12BCEB3520003A6AB /* XCRemoteSwiftPackageReference "Weather" */;
+			productName = Weather;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D26A003A2B7BAF8E00AAF9E4 /* Project object */;
 }

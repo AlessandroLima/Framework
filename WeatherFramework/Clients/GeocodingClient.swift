@@ -35,7 +35,7 @@ public struct GeocodingClient {
     }
     
     public func coordinateByCity(_ city: String) async throws -> Location? {
-        let (data, response) = try await session.data(from: APIEndPoint.endPointURL(for: .coordinatesByLocationName(city)))
+        let (data, response) = try await session.data(from: APIEndPoint.endPointURL(for: .coordinatesByLocationName(city.addingPercentEncoding(withAllowedCharacters: .urlHostAllowed) ?? "")))
         
         guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else {
             throw NetworkError.invalidResponse
